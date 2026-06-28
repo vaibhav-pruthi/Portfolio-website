@@ -64,6 +64,4 @@ Contributions are welcome and appreciated. To contribute to the Portfolio Projec
 The Portfolio Project is licensed under the MIT License.
 
 
-## 💖 Thanks Message
-Thank you for considering the Portfolio Project for your developer portfolio needs. We hope you find this project helpful and enjoyable to use.
-This is written by [readme.ai](https://readme-generator-phi.vercel.app/) so and so
+
