@@ -54,8 +54,8 @@ export function Certifications() {
 export function GitHubStats() {
   const user = "vaibhav-pruthi";
   const cards = [
-    { src: `https://github-readme-stats.vercel.app/api?username=${user}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000`, alt: "GitHub Stats" },
-    { src: `https://github-readme-stats.vercel.app/api/top-langs/?username=${user}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000`, alt: "Top Languages" },
+    { src: `https://github-stats-extended.vercel.app/api?username=${user}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000`, alt: "GitHub Stats" },
+    { src: `https://github-stats-extended.vercel.app/api/top-langs/?username=${user}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000`, alt: "Top Languages" },
     { src: `https://github-readme-streak-stats.herokuapp.com/?user=${user}&theme=tokyonight&hide_border=true&background=00000000`, alt: "Streak Stats" },
   ];
   return (
