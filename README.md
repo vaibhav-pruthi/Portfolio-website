@@ -60,8 +60,7 @@ The Portfolio Project is designed to be easy to use and customize. To get starte
 ## 🤝 Contributing
 Contributions are welcome and appreciated. To contribute to the Portfolio Project, please fork the repository, make your changes, and submit a pull request.
 
-## 📝 License
-The Portfolio Project is licensed under the MIT License.
+
 
 
 
