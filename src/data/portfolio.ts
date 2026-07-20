@@ -23,7 +23,7 @@ export const profile = {
   github: "https://github.com/vaibhav-pruthi",
   linkedin: "https://www.linkedin.com/in/vaibhav-pruthi%F0%9F%87%AE%F0%9F%87%B3-83562128b/",
   portfolio: "#",
-  resumeUrl: "https://drive.google.com/uc?export=download&id=170LpQ6Joi6RocT3oitIyqRZEJKF16DS7",
+  resumeUrl: "/Vaibhav_Resume.pdf",
   avatar: "VP",
 };
 
