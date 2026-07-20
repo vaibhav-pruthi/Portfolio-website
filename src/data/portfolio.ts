@@ -151,6 +151,16 @@ export const projects = [
     github: "https://github.com/vaibhav-pruthi/ai-comp-gen",
     demo: "#",
   },
+  {
+    title: "ChatSphere — Real-Time Chat Application",
+    description:
+      "A full-stack real-time chat application featuring secure JWT authentication, instant messaging, active user presence tracking, and user search functionality.",
+    features: ["Real-time communication", "User search & discovery", "JWT auth & route protection"],
+    tech: ["React.js", "Node.js", "Express.js", "Socket.io", "MongoDB", "Zustand", "Tailwind CSS"],
+    gradient: "from-sky-400 via-blue-500 to-indigo-600",
+    github: "https://github.com/vaibhav-pruthi/Real-Time_ChatApp",
+    demo: "#",
+  },
 ];
 
 export const experience = [
@@ -169,7 +179,7 @@ export const experience = [
 
 export const education = [
   {
-    degree: "Bachelor of Technology in Computer Science — CGPA 8.51/10",
+    degree: "Bachelor of Technology in Computer Science — CGPA 8.44/10",
     school: "Bennett University, Greater Noida, UP",
     period: "August 2023 — August 2027",
     coursework: [
@@ -196,7 +206,7 @@ export const achievements = [
   { title: "98% Model Accuracy", desc: "Fake News Detection using ensemble ML/DL", icon: Trophy, color: "text-amber-400" },
   { title: "40% Faster Reports", desc: "SQL optimization on 10,000+ hospital records", icon: Award, color: "text-cyan-400" },
   { title: "60% Less Manual Work", desc: "Power BI dashboard for accident analysis", icon: BarChart3, color: "text-emerald-400" },
-  { title: "CGPA 8.51 / 10", desc: "Consistent academic performance at Bennett University", icon: GraduationCap, color: "text-violet-400" },
+  { title: "CGPA 8.44 / 10", desc: "Consistent academic performance at Bennett University", icon: GraduationCap, color: "text-violet-400" },
 ];
 
 export const testimonials = [
