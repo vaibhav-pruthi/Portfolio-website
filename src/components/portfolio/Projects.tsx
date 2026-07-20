@@ -16,11 +16,16 @@ function ProjectCard({ p, i }: { p: (typeof projects)[number]; i: number }) {
       <div className="relative rounded-3xl p-[1px] bg-gradient-to-br from-white/20 via-white/5 to-transparent transition-all duration-300 group-hover:shadow-[0_20px_50px_-20px_rgba(124,58,237,0.4)]">
         <div className="relative rounded-3xl glass-strong overflow-hidden">
           {/* visual */}
-          <div className={`relative aspect-[16/10] bg-gradient-to-br ${p.gradient} overflow-hidden`}>
-            <div className="absolute inset-0 opacity-30 mix-blend-overlay" style={{
-              backgroundImage:
-                "radial-gradient(circle at 30% 20%, white 0%, transparent 50%), radial-gradient(circle at 80% 70%, white 0%, transparent 50%)",
-            }}/>
+          <div
+            className={`relative aspect-[16/10] bg-gradient-to-br ${p.gradient} overflow-hidden`}
+          >
+            <div
+              className="absolute inset-0 opacity-30 mix-blend-overlay"
+              style={{
+                backgroundImage:
+                  "radial-gradient(circle at 30% 20%, white 0%, transparent 50%), radial-gradient(circle at 80% 70%, white 0%, transparent 50%)",
+              }}
+            />
             <div className="absolute inset-0 grid place-items-center">
               <div className="font-display text-4xl sm:text-5xl font-bold text-white/90 text-center px-6 drop-shadow-lg">
                 {p.title}
@@ -36,7 +41,10 @@ function ProjectCard({ p, i }: { p: (typeof projects)[number]; i: number }) {
 
             <ul className="mt-4 flex flex-wrap gap-2">
               {p.features.map((f) => (
-                <li key={f} className="text-xs px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-muted-foreground">
+                <li
+                  key={f}
+                  className="text-xs px-2.5 py-1 rounded-full bg-white/5 border border-white/10 text-muted-foreground"
+                >
                   {f}
                 </li>
               ))}
@@ -44,7 +52,10 @@ function ProjectCard({ p, i }: { p: (typeof projects)[number]; i: number }) {
 
             <div className="mt-4 flex flex-wrap gap-1.5">
               {p.tech.map((t) => (
-                <span key={t} className="text-[11px] px-2 py-0.5 rounded-md bg-gradient-to-r from-violet-500/20 to-cyan-500/20 text-foreground/80 border border-white/10">
+                <span
+                  key={t}
+                  className="text-[11px] px-2 py-0.5 rounded-md bg-gradient-to-r from-violet-500/20 to-cyan-500/20 text-foreground/80 border border-white/10"
+                >
                   {t}
                 </span>
               ))}
@@ -88,7 +99,11 @@ export function Projects() {
       <div className="relative mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="Featured work"
-          title={<>Projects I'm <span className="gradient-text">proud of</span></>}
+          title={
+            <>
+              Projects I'm <span className="gradient-text">proud of</span>
+            </>
+          }
           description="A selection of shipped products, experiments, and side quests."
         />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

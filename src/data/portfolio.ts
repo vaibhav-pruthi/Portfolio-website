@@ -1,6 +1,15 @@
 import {
-  Code2, Database, Brain, Cloud, Wrench, Sparkles,
-  Trophy, GraduationCap, Briefcase, Award, BarChart3,
+  Code2,
+  Database,
+  Brain,
+  Cloud,
+  Wrench,
+  Sparkles,
+  Trophy,
+  GraduationCap,
+  Briefcase,
+  Award,
+  BarChart3,
 } from "lucide-react";
 
 export const profile = {
@@ -14,12 +23,12 @@ export const profile = {
   github: "https://github.com/vaibhav-pruthi",
   linkedin: "https://www.linkedin.com/in/vaibhav-pruthi%F0%9F%87%AE%F0%9F%87%B3-83562128b/",
   portfolio: "#",
-  resumeUrl: "https://drive.google.com/uc?export=download&id=1-RIs704ibczuCeNEpme2npQWl5HqsFfE",
+  resumeUrl: "https://drive.google.com/file/d/170LpQ6Joi6RocT3oitIyqRZEJKF16DS7/view?usp=sharing",
   avatar: "VP",
 };
 
 export const stats = [
-  { label: "CGPA", value: 8.51, suffix: "/10" },
+  { label: "CGPA", value: 8.44, suffix: "/10" },
   { label: "Projects Built", value: 6, suffix: "+" },
   { label: "Technologies", value: 20, suffix: "+" },
   { label: "Internships", value: 1, suffix: "" },
@@ -114,8 +123,8 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: "Vercel", level: 88 },
       { name: "Render", level: 80 },
-      { name: "Netlify", level: 85 } ,
-      {name:"Docker",level:70} ,
+      { name: "Netlify", level: 85 },
+      { name: "Docker", level: 70 },
     ],
   },
 ];
@@ -197,16 +206,54 @@ export const education = [
 ];
 
 export const certifications = [
-  { title: "Programming in C++: A Hands On Introduction", provider: "Coursera", date: "", gradient: "from-blue-500 to-violet-500", credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/189DBUHSW2SO" },
-  { title: "Algorithmic Toolbox", provider: "Coursera", date: "", gradient: "from-amber-500 to-pink-500", credentialUrl: "https://www.coursera.org/account/accomplishments/verify/XEKB2E7S7G6J" },
-  { title: "Text Retrieval and Search Engines", provider: "Coursera", date: "", gradient: "from-pink-500 to-violet-500", credentialUrl: "https://www.coursera.org/account/accomplishments/verify/NGDENUOLTGRC" },
+  {
+    title: "Programming in C++: A Hands On Introduction",
+    provider: "Coursera",
+    date: "",
+    gradient: "from-blue-500 to-violet-500",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/specialization/189DBUHSW2SO",
+  },
+  {
+    title: "Algorithmic Toolbox",
+    provider: "Coursera",
+    date: "",
+    gradient: "from-amber-500 to-pink-500",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/verify/XEKB2E7S7G6J",
+  },
+  {
+    title: "Text Retrieval and Search Engines",
+    provider: "Coursera",
+    date: "",
+    gradient: "from-pink-500 to-violet-500",
+    credentialUrl: "https://www.coursera.org/account/accomplishments/verify/NGDENUOLTGRC",
+  },
 ];
 
 export const achievements = [
-  { title: "98% Model Accuracy", desc: "Fake News Detection using ensemble ML/DL", icon: Trophy, color: "text-amber-400" },
-  { title: "40% Faster Reports", desc: "SQL optimization on 10,000+ hospital records", icon: Award, color: "text-cyan-400" },
-  { title: "60% Less Manual Work", desc: "Power BI dashboard for accident analysis", icon: BarChart3, color: "text-emerald-400" },
-  { title: "CGPA 8.44 / 10", desc: "Consistent academic performance at Bennett University", icon: GraduationCap, color: "text-violet-400" },
+  {
+    title: "98% Model Accuracy",
+    desc: "Fake News Detection using ensemble ML/DL",
+    icon: Trophy,
+    color: "text-amber-400",
+  },
+  {
+    title: "40% Faster Reports",
+    desc: "SQL optimization on 10,000+ hospital records",
+    icon: Award,
+    color: "text-cyan-400",
+  },
+  {
+    title: "60% Less Manual Work",
+    desc: "Power BI dashboard for accident analysis",
+    icon: BarChart3,
+    color: "text-emerald-400",
+  },
+  {
+    title: "CGPA 8.44 / 10",
+    desc: "Consistent academic performance at Bennett University",
+    icon: GraduationCap,
+    color: "text-violet-400",
+  },
 ];
 
 export const testimonials = [

@@ -8,7 +8,11 @@ export function Skills() {
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="Skills"
-          title={<>The <span className="gradient-text">stack</span> I build with</>}
+          title={
+            <>
+              The <span className="gradient-text">stack</span> I build with
+            </>
+          }
           description="A growing toolkit spanning frontend, backend, AI, and the cloud."
         />
 
@@ -27,7 +31,9 @@ export function Skills() {
                   className={`absolute -top-16 -right-16 w-48 h-48 rounded-full bg-gradient-to-br ${cat.gradient} opacity-20 blur-3xl group-hover:opacity-40 transition-opacity`}
                 />
                 <div className="relative flex items-center gap-3 mb-5">
-                  <div className={`grid place-items-center w-11 h-11 rounded-2xl bg-gradient-to-br ${cat.gradient} text-white`}>
+                  <div
+                    className={`grid place-items-center w-11 h-11 rounded-2xl bg-gradient-to-br ${cat.gradient} text-white`}
+                  >
                     <cat.icon className="w-5 h-5" />
                   </div>
                   <h3 className="font-display text-lg font-semibold">{cat.title}</h3>

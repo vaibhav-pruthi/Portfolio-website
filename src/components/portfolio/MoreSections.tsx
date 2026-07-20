@@ -10,7 +10,11 @@ export function Certifications() {
       <div className="relative mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="Certifications"
-          title={<>Always <span className="gradient-text">leveling up</span></>}
+          title={
+            <>
+              Always <span className="gradient-text">leveling up</span>
+            </>
+          }
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {certifications.map((c, i) => (
@@ -22,9 +26,15 @@ export function Certifications() {
               transition={{ duration: 0.5, delay: i * 0.05 }}
               className="group rounded-3xl glass-strong overflow-hidden hover-lift"
             >
-              <div className={`relative aspect-[16/9] bg-gradient-to-br ${c.gradient} overflow-hidden`}>
-                <div className="absolute inset-0 opacity-30 mix-blend-overlay"
-                     style={{ backgroundImage: "radial-gradient(circle at 30% 30%, white, transparent 50%)" }} />
+              <div
+                className={`relative aspect-[16/9] bg-gradient-to-br ${c.gradient} overflow-hidden`}
+              >
+                <div
+                  className="absolute inset-0 opacity-30 mix-blend-overlay"
+                  style={{
+                    backgroundImage: "radial-gradient(circle at 30% 30%, white, transparent 50%)",
+                  }}
+                />
                 <div className="absolute inset-0 grid place-items-center text-white/90 font-display font-bold text-xl text-center px-6">
                   {c.title}
                 </div>
@@ -37,7 +47,9 @@ export function Certifications() {
                 <a
                   href={c.credentialUrl || "#"}
                   target={c.credentialUrl && c.credentialUrl !== "#" ? "_blank" : undefined}
-                  rel={c.credentialUrl && c.credentialUrl !== "#" ? "noopener noreferrer" : undefined}
+                  rel={
+                    c.credentialUrl && c.credentialUrl !== "#" ? "noopener noreferrer" : undefined
+                  }
                   className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs border border-white/10 hover:bg-white/5 transition-colors"
                 >
                   <ExternalLink className="w-3.5 h-3.5" /> View
@@ -54,16 +66,29 @@ export function Certifications() {
 export function GitHubStats() {
   const user = "vaibhav-pruthi";
   const cards = [
-    { src: `https://github-stats-extended.vercel.app/api?username=${user}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000`, alt: "GitHub Stats" },
-    { src: `https://github-stats-extended.vercel.app/api/top-langs/?username=${user}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000`, alt: "Top Languages" },
-    { src: `https://github-readme-streak-stats.herokuapp.com/?user=${user}&theme=tokyonight&hide_border=true&background=00000000`, alt: "Streak Stats" },
+    {
+      src: `https://github-stats-extended.vercel.app/api?username=${user}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=00000000`,
+      alt: "GitHub Stats",
+    },
+    {
+      src: `https://github-stats-extended.vercel.app/api/top-langs/?username=${user}&layout=compact&theme=tokyonight&hide_border=true&bg_color=00000000`,
+      alt: "Top Languages",
+    },
+    {
+      src: `https://github-readme-streak-stats.herokuapp.com/?user=${user}&theme=tokyonight&hide_border=true&background=00000000`,
+      alt: "Streak Stats",
+    },
   ];
   return (
     <section id="github" className="relative py-28">
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="GitHub"
-          title={<>Open <span className="gradient-text">source life</span></>}
+          title={
+            <>
+              Open <span className="gradient-text">source life</span>
+            </>
+          }
           description="A live look at my contributions, languages, and streaks."
         />
         <div className="rounded-3xl glass-strong p-6 mb-6">
@@ -92,7 +117,11 @@ export function Achievements() {
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="Achievements"
-          title={<>Milestones & <span className="gradient-text">moments</span></>}
+          title={
+            <>
+              Milestones & <span className="gradient-text">moments</span>
+            </>
+          }
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {achievements.map((a, i) => (
@@ -181,7 +210,11 @@ export function Testimonials() {
       <div className="mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="Kind words"
-          title={<>What people <span className="gradient-text">say</span></>}
+          title={
+            <>
+              What people <span className="gradient-text">say</span>
+            </>
+          }
         />
         <div className="grid md:grid-cols-3 gap-5">
           {testimonials.map((t, i) => (
@@ -197,7 +230,10 @@ export function Testimonials() {
               <p className="mt-3 text-sm text-foreground/90 leading-relaxed">"{t.quote}"</p>
               <div className="mt-5 flex items-center gap-3">
                 <div className="grid place-items-center w-10 h-10 rounded-full bg-gradient-to-br from-violet-500 to-cyan-400 text-white text-sm font-semibold">
-                  {t.name.split(" ").map((n) => n[0]).join("")}
+                  {t.name
+                    .split(" ")
+                    .map((n) => n[0])
+                    .join("")}
                 </div>
                 <div>
                   <div className="text-sm font-medium">{t.name}</div>

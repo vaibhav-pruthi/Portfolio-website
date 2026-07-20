@@ -8,7 +8,11 @@ export function Experience() {
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading
           eyebrow="Experience"
-          title={<>Where I've <span className="gradient-text">built things</span></>}
+          title={
+            <>
+              Where I've <span className="gradient-text">built things</span>
+            </>
+          }
         />
 
         <div className="relative">
@@ -26,17 +30,23 @@ export function Experience() {
                   transition={{ duration: 0.5, delay: i * 0.05 }}
                   className={`relative sm:grid sm:grid-cols-2 sm:gap-10 ${left ? "" : "sm:[direction:rtl]"}`}
                 >
-                  <div className={`pl-12 sm:pl-0 [direction:ltr] ${left ? "sm:text-right sm:pr-10" : "sm:pl-10"}`}>
+                  <div
+                    className={`pl-12 sm:pl-0 [direction:ltr] ${left ? "sm:text-right sm:pr-10" : "sm:pl-10"}`}
+                  >
                     <div className="rounded-3xl glass-strong p-6 hover-lift">
-                      <div className="flex items-center gap-2 sm:justify-end text-xs text-muted-foreground mb-2"
-                           style={ left ? {} : { justifyContent: "flex-start" } }>
+                      <div
+                        className="flex items-center gap-2 sm:justify-end text-xs text-muted-foreground mb-2"
+                        style={left ? {} : { justifyContent: "flex-start" }}
+                      >
                         <span className="px-2 py-0.5 rounded-full bg-gradient-to-r from-violet-500/30 to-cyan-500/30 border border-white/10">
                           {e.period}
                         </span>
                       </div>
                       <h3 className="font-display text-lg font-semibold">{e.role}</h3>
                       <div className="text-sm text-muted-foreground">{e.org}</div>
-                      <ul className={`mt-3 space-y-1.5 text-sm text-muted-foreground ${left ? "sm:text-right" : ""}`}>
+                      <ul
+                        className={`mt-3 space-y-1.5 text-sm text-muted-foreground ${left ? "sm:text-right" : ""}`}
+                      >
                         {e.points.map((pt) => (
                           <li key={pt}>• {pt}</li>
                         ))}
@@ -68,7 +78,11 @@ export function Education() {
       <div className="mx-auto max-w-5xl px-6">
         <SectionHeading
           eyebrow="Education"
-          title={<>What I've <span className="gradient-text">studied</span></>}
+          title={
+            <>
+              What I've <span className="gradient-text">studied</span>
+            </>
+          }
         />
         <div className="grid md:grid-cols-2 gap-5">
           {education.map((ed, i) => (
@@ -90,7 +104,10 @@ export function Education() {
                   <div className="text-sm text-muted-foreground">{ed.school}</div>
                   <div className="mt-3 flex flex-wrap gap-1.5">
                     {ed.coursework.map((c) => (
-                      <span key={c} className="text-[11px] px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-muted-foreground">
+                      <span
+                        key={c}
+                        className="text-[11px] px-2 py-0.5 rounded-md bg-white/5 border border-white/10 text-muted-foreground"
+                      >
                         {c}
                       </span>
                     ))}

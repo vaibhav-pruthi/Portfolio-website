@@ -3,8 +3,16 @@ import { motion, useScroll, useTransform, useMotionValue, useSpring } from "fram
 import { ArrowRight, Download, Mail, Github, Linkedin, Sparkles } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import {
-  SiReact, SiTypescript, SiTailwindcss, SiNextdotjs, SiNodedotjs,
-  SiMongodb, SiPostgresql, SiVercel, SiDocker, SiPython,
+  SiReact,
+  SiTypescript,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiMongodb,
+  SiPostgresql,
+  SiVercel,
+  SiDocker,
+  SiPython,
 } from "react-icons/si";
 
 const floatingIcons = [
@@ -40,7 +48,7 @@ function useTyped(words: string[], speed = 80, pause = 1500) {
           }
         }
       },
-      deleting ? speed / 2 : speed
+      deleting ? speed / 2 : speed,
     );
     return () => clearTimeout(t);
   }, [text, deleting, wi, words, speed, pause]);
@@ -135,8 +143,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="mt-6 text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold leading-[1.05] tracking-tight"
           >
-            Hi, I'm{" "}
-            <span className="gradient-text inline-block">{profile.name}</span>
+            Hi, I'm <span className="gradient-text inline-block">{profile.name}</span>
           </motion.h1>
 
           <motion.div
@@ -214,13 +221,25 @@ export function Hero() {
             transition={{ delay: 1, duration: 0.6 }}
             className="mt-8 flex items-center gap-4 text-muted-foreground"
           >
-            <a href={profile.github} aria-label="GitHub" className="hover:text-foreground transition-colors">
+            <a
+              href={profile.github}
+              aria-label="GitHub"
+              className="hover:text-foreground transition-colors"
+            >
               <Github className="w-5 h-5" />
             </a>
-            <a href={profile.linkedin} aria-label="LinkedIn" className="hover:text-foreground transition-colors">
+            <a
+              href={profile.linkedin}
+              aria-label="LinkedIn"
+              className="hover:text-foreground transition-colors"
+            >
               <Linkedin className="w-5 h-5" />
             </a>
-            <a href={`mailto:${profile.email}`} aria-label="Email" className="hover:text-foreground transition-colors">
+            <a
+              href={`mailto:${profile.email}`}
+              aria-label="Email"
+              className="hover:text-foreground transition-colors"
+            >
               <Mail className="w-5 h-5" />
             </a>
           </motion.div>

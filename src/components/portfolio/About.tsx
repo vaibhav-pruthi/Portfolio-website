@@ -5,9 +5,24 @@ import { Compass, Rocket, Heart, Target } from "lucide-react";
 
 const pillars = [
   { icon: Compass, title: "Journey", text: about.journey, gradient: "from-violet-500 to-pink-500" },
-  { icon: Target, title: "Objective", text: about.objective, gradient: "from-cyan-500 to-blue-500" },
-  { icon: Heart, title: "Passion", text: "Building AI products with craft, taste, and obsessive attention to detail.", gradient: "from-pink-500 to-amber-400" },
-  { icon: Rocket, title: "Now", text: "Exploring multi-agent systems, LLM evals, and design-engineering.", gradient: "from-emerald-500 to-cyan-500" },
+  {
+    icon: Target,
+    title: "Objective",
+    text: about.objective,
+    gradient: "from-cyan-500 to-blue-500",
+  },
+  {
+    icon: Heart,
+    title: "Passion",
+    text: "Building AI products with craft, taste, and obsessive attention to detail.",
+    gradient: "from-pink-500 to-amber-400",
+  },
+  {
+    icon: Rocket,
+    title: "Now",
+    text: "Exploring multi-agent systems, LLM evals, and design-engineering.",
+    gradient: "from-emerald-500 to-cyan-500",
+  },
 ];
 
 export function About() {
@@ -17,7 +32,11 @@ export function About() {
       <div className="relative mx-auto max-w-7xl px-6">
         <SectionHeading
           eyebrow="About me"
-          title={<>Building thoughtful software at the <span className="gradient-text">edge of AI</span></>}
+          title={
+            <>
+              Building thoughtful software at the <span className="gradient-text">edge of AI</span>
+            </>
+          }
           description={about.summary}
         />
 
@@ -32,7 +51,9 @@ export function About() {
               className="group relative rounded-3xl p-[1px] bg-gradient-to-br from-white/10 to-white/0 hover-lift"
             >
               <div className="relative h-full rounded-3xl glass-strong p-6">
-                <div className={`inline-grid place-items-center w-11 h-11 rounded-2xl bg-gradient-to-br ${p.gradient} text-white mb-4`}>
+                <div
+                  className={`inline-grid place-items-center w-11 h-11 rounded-2xl bg-gradient-to-br ${p.gradient} text-white mb-4`}
+                >
                   <p.icon className="w-5 h-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold">{p.title}</h3>

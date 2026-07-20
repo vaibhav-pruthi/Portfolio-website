@@ -26,25 +26,18 @@ export function Contact() {
       user_email: form.email,
     };
 
-    emailjs
-      .send(
-        "service_zs3hu2a",
-        "template_77uwo17",
-        templateParams,
-        "DyppH8GL3ISr9FEnr"
-      )
-      .then(
-        () => {
-          toast.success("Message sent successfully!");
-          setForm({ name: "", email: "", message: "" });
-          setIsSending(false);
-        },
-        (error) => {
-          console.error("EmailJS Error:", error);
-          toast.error("Failed to send message. Please try again.");
-          setIsSending(false);
-        }
-      );
+    emailjs.send("service_zs3hu2a", "template_77uwo17", templateParams, "DyppH8GL3ISr9FEnr").then(
+      () => {
+        toast.success("Message sent successfully!");
+        setForm({ name: "", email: "", message: "" });
+        setIsSending(false);
+      },
+      (error) => {
+        console.error("EmailJS Error:", error);
+        toast.error("Failed to send message. Please try again.");
+        setIsSending(false);
+      },
+    );
   };
 
   const items = [
@@ -61,14 +54,20 @@ export function Contact() {
       <div className="relative mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="Contact"
-          title={<>Let's <span className="gradient-text">build something</span></>}
+          title={
+            <>
+              Let's <span className="gradient-text">build something</span>
+            </>
+          }
           description="Have a project, role, or idea to discuss? My inbox is always open."
         />
 
         <div className="grid lg:grid-cols-2 gap-6">
           <div className="rounded-3xl glass-strong p-6 sm:p-8">
             <h3 className="font-display text-xl font-semibold">Reach me directly</h3>
-            <p className="mt-1 text-sm text-muted-foreground">The fastest channels — happy to chat.</p>
+            <p className="mt-1 text-sm text-muted-foreground">
+              The fastest channels — happy to chat.
+            </p>
             <ul className="mt-6 space-y-3">
               {items.map((it) => (
                 <li key={it.label}>
@@ -89,12 +88,11 @@ export function Contact() {
             </ul>
           </div>
 
-          <form
-            onSubmit={handleSubmit}
-            className="rounded-3xl glass-strong p-6 sm:p-8 space-y-4"
-          >
+          <form onSubmit={handleSubmit} className="rounded-3xl glass-strong p-6 sm:p-8 space-y-4">
             <h3 className="font-display text-xl font-semibold">Send a message</h3>
-            <p className="text-sm text-muted-foreground -mt-1">I'll get back via email or LinkedIn.</p>
+            <p className="text-sm text-muted-foreground -mt-1">
+              I'll get back via email or LinkedIn.
+            </p>
             <div>
               <label className="text-xs text-muted-foreground">Name</label>
               <input
@@ -195,20 +193,34 @@ export function Footer() {
           <div>
             <div className="text-sm font-medium mb-3">Connect</div>
             <div className="flex items-center gap-2">
-              <a href={profile.github} aria-label="GitHub" className="grid place-items-center w-10 h-10 rounded-xl glass hover:bg-white/10 transition-colors">
+              <a
+                href={profile.github}
+                aria-label="GitHub"
+                className="grid place-items-center w-10 h-10 rounded-xl glass hover:bg-white/10 transition-colors"
+              >
                 <Github className="w-4 h-4" />
               </a>
-              <a href={profile.linkedin} aria-label="LinkedIn" className="grid place-items-center w-10 h-10 rounded-xl glass hover:bg-white/10 transition-colors">
+              <a
+                href={profile.linkedin}
+                aria-label="LinkedIn"
+                className="grid place-items-center w-10 h-10 rounded-xl glass hover:bg-white/10 transition-colors"
+              >
                 <Linkedin className="w-4 h-4" />
               </a>
-              <a href={`mailto:${profile.email}`} aria-label="Email" className="grid place-items-center w-10 h-10 rounded-xl glass hover:bg-white/10 transition-colors">
+              <a
+                href={`mailto:${profile.email}`}
+                aria-label="Email"
+                className="grid place-items-center w-10 h-10 rounded-xl glass hover:bg-white/10 transition-colors"
+              >
                 <Mail className="w-4 h-4" />
               </a>
             </div>
           </div>
         </div>
         <div className="mt-10 pt-6 border-t border-white/5 flex flex-wrap items-center justify-between gap-3 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} {profile.name}. Crafted with care.</div>
+          <div>
+            © {new Date().getFullYear()} {profile.name}. Crafted with care.
+          </div>
           <a
             href="#home"
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full glass hover:bg-white/10 transition-colors"
